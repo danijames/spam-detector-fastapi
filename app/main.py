@@ -7,10 +7,10 @@ from fastapi.templating import Jinja2Templates
 from fastapi import Request
 
 # Load model and vectorizer
-with open('models/spam_classifier_model.pkl', 'rb') as f:
+with open('app/spam_classifier_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
-with open('models/tfidf_vectorizer.pkl', 'rb') as f:
+with open('app/tfidf_vectorizer.pkl', 'rb') as f:
     vectorizer = pickle.load(f)
 
 # Define input data model
